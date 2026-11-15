@@ -8,11 +8,17 @@
 \hline
 \textbf{Dataset} & \textbf{System} & \textbf{Metric} & \textbf{Shapiro-Wilk $p$} & \textbf{Normal?} & \textbf{Test Used} & \textbf{$p$-value} & \textbf{Significance ($\alpha=0.05$)} & \textbf{Direction} & \textbf{Selective Mean vs Traditional Mean} \\
 \hline
-\multirow{10}{*}{MSDWild} & \multirow{5}{*}{\shortstack[l]{nemotron\\($N=488$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.1539 vs 0.1162 \\
+\multirow{15}{*}{MSDWild} & \multirow{5}{*}{\shortstack[l]{nemotron\\($N=488$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.1539 vs 0.1162 \\
  &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.2175 vs 0.1866 \\
  &  & CDER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.3055 vs 0.4212 \\
  &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.1623 vs 0.1435 \\
  &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.1827 vs 0.1695 \\
+\cline{2-10}
+ & \multirow{5}{*}{\shortstack[l]{pyannote\\($N=488$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.2969 vs 0.2493 \\
+ &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.4007 vs 0.3730 \\
+ &  & CDER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.6241 vs 0.7254 \\
+ &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.3758 vs 0.3026 \\
+ &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.4730 vs 0.4108 \\
 \cline{2-10}
  & \multirow{5}{*}{\shortstack[l]{vbx\\($N=488$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.4523 vs 0.4119 \\
  &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.6290 vs 0.6115 \\
@@ -20,11 +26,17 @@
  &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.5934 vs 0.4827 \\
  &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.6336 vs 0.5578 \\
 \hline
-\multirow{10}{*}{VoxConverse} & \multirow{5}{*}{\shortstack[l]{nemotron\\($N=232$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.0722 vs 0.0608 \\
+\multirow{15}{*}{VoxConverse} & \multirow{5}{*}{\shortstack[l]{nemotron\\($N=232$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.0722 vs 0.0608 \\
  &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.1874 vs 0.1767 \\
  &  & CDER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 1.1408 vs 1.2099 \\
  &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.1013 vs 0.0934 \\
  &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.1699 vs 0.1630 \\
+\cline{2-10}
+ & \multirow{5}{*}{\shortstack[l]{pyannote\\($N=232$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.1155 vs 0.0946 \\
+ &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.2904 vs 0.2747 \\
+ &  & CDER & 0.0001 & No & Wilcoxon & 0.0239 & * & $\downarrow$ & 0.8276 vs 0.8558 \\
+ &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.2514 vs 0.2025 \\
+ &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.3080 vs 0.2752 \\
 \cline{2-10}
  & \multirow{5}{*}{\shortstack[l]{vbx\\($N=232$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.2210 vs 0.1989 \\
  &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\uparrow$ & 0.3553 vs 0.3380 \\
@@ -46,11 +58,17 @@
 \hline
 \textbf{Dataset} & \textbf{System} & \textbf{Metric} & \textbf{Shapiro-Wilk $p$} & \textbf{Normal?} & \textbf{Test Used} & \textbf{$p$-value} & \textbf{Significance ($\alpha=0.05$)} & \textbf{Direction} & \textbf{Selective Mean vs No Mean} \\
 \hline
-\multirow{10}{*}{MSDWild} & \multirow{5}{*}{\shortstack[l]{nemotron\\($N=488$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.1539 vs 0.1776 \\
+\multirow{15}{*}{MSDWild} & \multirow{5}{*}{\shortstack[l]{nemotron\\($N=488$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.1539 vs 0.1776 \\
  &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.2175 vs 0.2420 \\
  &  & CDER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.3055 vs 0.3202 \\
  &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.1623 vs 0.1719 \\
  &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.1827 vs 0.1962 \\
+\cline{2-10}
+ & \multirow{5}{*}{\shortstack[l]{pyannote\\($N=488$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.2969 vs 0.3109 \\
+ &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.4007 vs 0.4128 \\
+ &  & CDER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.6241 vs 0.6429 \\
+ &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.3758 vs 0.3832 \\
+ &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.4730 vs 0.4831 \\
 \cline{2-10}
  & \multirow{5}{*}{\shortstack[l]{vbx\\($N=488$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.4523 vs 0.4589 \\
  &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.6290 vs 0.6325 \\
@@ -58,11 +76,17 @@
  &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.5934 vs 0.5978 \\
  &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.6336 vs 0.6381 \\
 \hline
-\multirow{10}{*}{VoxConverse} & \multirow{5}{*}{\shortstack[l]{nemotron\\($N=232$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.0722 vs 0.0817 \\
+\multirow{15}{*}{VoxConverse} & \multirow{5}{*}{\shortstack[l]{nemotron\\($N=232$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.0722 vs 0.0817 \\
  &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.1874 vs 0.1991 \\
  &  & CDER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 1.1408 vs 1.1580 \\
  &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.1013 vs 0.1050 \\
  &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.1699 vs 0.1744 \\
+\cline{2-10}
+ & \multirow{5}{*}{\shortstack[l]{pyannote\\($N=232$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.1155 vs 0.1219 \\
+ &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.2904 vs 0.2959 \\
+ &  & CDER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.8276 vs 0.8351 \\
+ &  & SER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.2514 vs 0.2568 \\
+ &  & BER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.3080 vs 0.3126 \\
 \cline{2-10}
  & \multirow{5}{*}{\shortstack[l]{vbx\\($N=232$)}} & DER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.2210 vs 0.2246 \\
  &  & JER & $\approx 0$ & No & Wilcoxon & $< 0.001$ & *** & $\downarrow$ & 0.3553 vs 0.3584 \\

@@ -9,17 +9,17 @@ only when it lies within the tolerance window *and* the mapped speaker identity 
   Mitigate Evaluation Bias in Speaker Diarization," *IEEE Access*, vol. 14, pp. 136563-136580, 2026,
   doi: 10.1109/ACCESS.2026.3729661.
 
-This repository carries out the multi-model validation listed there as future work: two further
-diarization systems are scored under three collar conditions and compared with the published
-Pyannote 3.1 results.
+This repository carries out the multi-model validation listed there as future work: three
+diarization systems of different design are scored under three collar conditions. The re-run of
+Pyannote 3.1 reproduces the values published in the original paper (mean DER within 0.003 in every
+condition).
 
 ## What was evaluated
 
 | | |
 |---|---|
 | Datasets | VoxConverse test (232 files), MSDWild `few.val` (488 files; 00017 and 00018 excluded as in the original paper) |
-| Systems scored here | VBx (ResNet101 x-vectors + AHC + VB-HMM) with BUT energy VAD; NVIDIA Nemotron-3-Diarization (Streaming-Sortformer-style, via NeMo) |
-| Baseline | Pyannote 3.1, published aggregate values from the original paper (not re-scored here) |
+| Systems scored | VBx (ResNet101 x-vectors + AHC + VB-HMM) with BUT energy VAD; Pyannote 3.1 (`pyannote/speaker-diarization-3.1`, pyannote.audio 3.3.2, defaults); NVIDIA Nemotron-3-Diarization (Streaming-Sortformer-style, via NeMo) |
 | Conditions | No Collar (0 s); Traditional Collar; Selective Collar (c* = 0.25 s, tolerance 0.125 s, then scored at 0 s) |
 | Metrics | DER with MS / FA / SC, JER, CDER, SER, BER |
 
@@ -37,8 +37,8 @@ and MSDWild protocols, apply **+/-0.25 s**. Results for that wider setting are i
 |---|---|---|---|---|---|
 | VBx | MSDWild | 0.459 | 0.452 | 0.412 | 14.8% |
 | VBx | VoxConverse | 0.225 | 0.221 | 0.199 | 19.9% |
-| Pyannote 3.1 (published) | MSDWild | 0.308 | 0.294 | 0.247 | n/a |
-| Pyannote 3.1 (published) | VoxConverse | 0.123 | 0.117 | 0.095 | n/a |
+| Pyannote 3.1 | MSDWild | 0.311 | 0.297 | 0.249 | 35.1% |
+| Pyannote 3.1 | VoxConverse | 0.122 | 0.115 | 0.095 | 40.1% |
 | Nemotron-3 | MSDWild | 0.178 | 0.154 | 0.116 | 55.3% |
 | Nemotron-3 | VoxConverse | 0.082 | 0.072 | 0.061 | 61.3% |
 
@@ -52,9 +52,10 @@ comparison) and outputs at most eight speakers (61 VoxConverse files have more).
 benchmark/
   nemotron/     Nemotron-3-Diarization runner (own environment, README with setup)
   vbx/          VBx + energy VAD runner (own environment, README with setup and code patches)
+  pyannote/     Pyannote 3.1 runner (own environment, README with setup and compatibility shims)
   eval/         evaluation harness: three conditions, all metrics, tables, statistical tests, figures
   outputs/
-    rttm/<system>/<dataset>/<file_id>.rttm    hypotheses produced by the two systems
+    rttm/<system>/<dataset>/<file_id>.rttm    hypotheses produced by the three systems
     runtime/                                  per-file audio duration and inference time, run logs
   results/
     alt_trad_hw0.125/   main setting (Traditional +/-0.125 s): per-file CSVs, tables, figures
@@ -76,10 +77,10 @@ Each component has its own Python 3.12 environment (managed with `uv`); see the 
      parts) and place them in `benchmark/vbx/VBx/models/ResNet101_16kHz/nnet/`. The PLDA and transform
      files are included.
    - Nemotron-3-Diarization: downloaded from Hugging Face (`nvidia/Nemotron-3-Diarization`) on first run.
-3. **Inference**: `benchmark/nemotron/run_nemotron.py` and `benchmark/vbx/run_vbx.py` (resumable).
+3. **Inference**: `benchmark/nemotron/run_nemotron.py`, `benchmark/vbx/run_vbx.py` and `benchmark/pyannote/run_pyannote.py` (resumable; Pyannote needs a Hugging Face token with the model terms accepted).
 4. **Scoring**, from `benchmark/eval/`:
    ```
-   python evaluate.py --systems nemotron vbx --datasets msdwild voxconverse --trad-half-width 0.125 --results-dir ../results/alt_trad_hw0.125
+   python evaluate.py --systems nemotron vbx pyannote --datasets msdwild voxconverse --trad-half-width 0.125 --results-dir ../results/alt_trad_hw0.125
    python summarize.py --results-dir ../results/alt_trad_hw0.125
    ```
    The hypotheses in `benchmark/outputs/rttm/` allow steps 1-3 to be skipped except for the ground truth.

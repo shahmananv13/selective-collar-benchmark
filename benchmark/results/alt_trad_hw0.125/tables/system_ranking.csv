@@ -1,13 +1,13 @@
 dataset,file_set,includes_published_pyannote,condition,ranking_best_to_worst,ranking_changes_between_conditions
-msdwild,common,False,no_collar,nemotron (0.178) < vbx (0.459),False
-msdwild,common,False,selective,nemotron (0.154) < vbx (0.452),False
-msdwild,common,False,traditional,nemotron (0.116) < vbx (0.412),False
-voxconverse,common,False,no_collar,nemotron (0.082) < vbx (0.225),False
-voxconverse,common,False,selective,nemotron (0.072) < vbx (0.221),False
-voxconverse,common,False,traditional,nemotron (0.061) < vbx (0.199),False
-msdwild,common,True,no_collar,nemotron (0.178) < pyannote_3.1 (published) (0.308) < vbx (0.459),False
-msdwild,common,True,selective,nemotron (0.154) < pyannote_3.1 (published) (0.294) < vbx (0.452),False
-msdwild,common,True,traditional,nemotron (0.116) < pyannote_3.1 (published) (0.247) < vbx (0.412),False
-voxconverse,common,True,no_collar,nemotron (0.082) < pyannote_3.1 (published) (0.123) < vbx (0.225),False
-voxconverse,common,True,selective,nemotron (0.072) < pyannote_3.1 (published) (0.117) < vbx (0.221),False
-voxconverse,common,True,traditional,nemotron (0.061) < pyannote_3.1 (published) (0.095) < vbx (0.199),False
+msdwild,common,False,no_collar,nemotron (0.178) < pyannote (0.311) < vbx (0.459),False
+msdwild,common,False,selective,nemotron (0.154) < pyannote (0.297) < vbx (0.452),False
+msdwild,common,False,traditional,nemotron (0.116) < pyannote (0.249) < vbx (0.412),False
+voxconverse,common,False,no_collar,nemotron (0.082) < pyannote (0.122) < vbx (0.225),False
+voxconverse,common,False,selective,nemotron (0.072) < pyannote (0.115) < vbx (0.221),False
+voxconverse,common,False,traditional,nemotron (0.061) < pyannote (0.095) < vbx (0.199),False
+msdwild,common,True,no_collar,nemotron (0.178) < pyannote_3.1 (published) (0.308) < pyannote (0.311) < vbx (0.459),False
+msdwild,common,True,selective,nemotron (0.154) < pyannote_3.1 (published) (0.294) < pyannote (0.297) < vbx (0.452),False
+msdwild,common,True,traditional,nemotron (0.116) < pyannote_3.1 (published) (0.247) < pyannote (0.249) < vbx (0.412),False
+voxconverse,common,True,no_collar,nemotron (0.082) < pyannote (0.122) < pyannote_3.1 (published) (0.123) < vbx (0.225),False
+voxconverse,common,True,selective,nemotron (0.072) < pyannote (0.115) < pyannote_3.1 (published) (0.117) < vbx (0.221),False
+voxconverse,common,True,traditional,nemotron (0.061) < pyannote (0.095) < pyannote_3.1 (published) (0.095) < vbx (0.199),False

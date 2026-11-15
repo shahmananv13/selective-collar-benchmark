@@ -5,6 +5,12 @@ nemotron,msdwild,traditional,488,15.72,1087
 nemotron,voxconverse,no_collar,232,33.27,652.1
 nemotron,voxconverse,selective,232,39.86,667.9
 nemotron,voxconverse,traditional,232,54,1097
+pyannote,msdwild,no_collar,488,12.86,941.5
+pyannote,msdwild,selective,488,17.47,920.8
+pyannote,msdwild,traditional,488,21.87,1815
+pyannote,voxconverse,no_collar,232,24.28,1571
+pyannote,voxconverse,selective,232,31.53,1611
+pyannote,voxconverse,traditional,232,42.87,3044
 vbx,msdwild,no_collar,488,8.271,582
 vbx,msdwild,selective,488,11.88,579.4
 vbx,msdwild,traditional,488,15.53,1133

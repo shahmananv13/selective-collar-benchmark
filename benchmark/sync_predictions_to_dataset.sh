@@ -4,7 +4,7 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 declare -A DS=( [msdwild]="MSDWild" [voxconverse]="VoxConverse" )
-declare -A SYS=( [nemotron]="Nemotron" [vbx]="VBx" )
+declare -A SYS=( [nemotron]="Nemotron" [vbx]="VBx" [pyannote]="Pyannote" )
 for s in "${!SYS[@]}"; do for d in "${!DS[@]}"; do
   src="$ROOT/benchmark/outputs/rttm/$s/$d"; [ -d "$src" ] || continue
   dst="$ROOT/Dataset/${DS[$d]}/Predicted RTTM/${SYS[$s]}"; mkdir -p "$dst"

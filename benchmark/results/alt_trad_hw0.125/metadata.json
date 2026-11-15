@@ -1,6 +1,6 @@
 {
   "harness_version": "1.0",
-  "last_run": "2026-11-15T16:44:08",
+  "last_run": "2026-11-15T20:25:16",
   "rttm_root": "C:\\Users\\manan\\OneDrive\\Desktop\\selective_collar\\benchmark\\outputs\\rttm",
   "config": {
     "trad_half_width": 0.125,
@@ -96,6 +96,33 @@
         "ok": 232
       },
       "per_file_csv": "..\\results\\alt_trad_hw0.125\\per_file\\vbx_voxconverse.csv",
+      "n_rows": 696,
+      "n_rows_with_errors": 0
+    },
+    {
+      "system": "pyannote",
+      "dataset": "msdwild",
+      "hyp_dir": "C:\\Users\\manan\\OneDrive\\Desktop\\selective_collar\\benchmark\\outputs\\rttm\\pyannote\\msdwild",
+      "status": "ok",
+      "n_reference_files": 488,
+      "counts": {
+        "ok": 488,
+        "excluded_by_protocol": 2
+      },
+      "per_file_csv": "..\\results\\alt_trad_hw0.125\\per_file\\pyannote_msdwild.csv",
+      "n_rows": 1464,
+      "n_rows_with_errors": 0
+    },
+    {
+      "system": "pyannote",
+      "dataset": "voxconverse",
+      "hyp_dir": "C:\\Users\\manan\\OneDrive\\Desktop\\selective_collar\\benchmark\\outputs\\rttm\\pyannote\\voxconverse",
+      "status": "ok",
+      "n_reference_files": 232,
+      "counts": {
+        "ok": 232
+      },
+      "per_file_csv": "..\\results\\alt_trad_hw0.125\\per_file\\pyannote_voxconverse.csv",
       "n_rows": 696,
       "n_rows_with_errors": 0
     }
