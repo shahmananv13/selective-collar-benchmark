@@ -1,0 +1,103 @@
+{
+  "harness_version": "1.0",
+  "last_run": "2026-11-15T16:44:08",
+  "rttm_root": "C:\\Users\\manan\\OneDrive\\Desktop\\selective_collar\\benchmark\\outputs\\rttm",
+  "config": {
+    "trad_half_width": 0.125,
+    "selective_collar": 0.25,
+    "selective_variant": "reference",
+    "der_backend": "mdeval",
+    "perl": "C:\\Program Files\\Git\\usr\\bin\\perl.EXE"
+  },
+  "collar_convention": {
+    "traditional_half_width_s": 0.125,
+    "traditional_window_total_s": 0.25,
+    "description": "Traditional collar: no scoring within +/- half_width seconds of every reference segment start and end; overlapped speech is scored (no skip-overlap).",
+    "DER_MS_FA_SC": "NIST md-eval-22.pl (dscore-ovl) with -c <half_width> (md-eval collar = half-width)",
+    "JER_CDER_SER_BER_traditional": "reference AND hypothesis cropped to the scored region (outside the +/- half_width zones), then scored with zero collar",
+    "DER_pyannote": "pyannote.metrics DiarizationErrorRate(collar=2*half_width, skip_overlap=False); pyannote 'collar' is the TOTAL width. One track per RTTM line (as in the reference selective-collar code), so same-speaker overlaps count twice.",
+    "DER_pyannote_merged": "same, after merging same-speaker overlapping segments (md-eval behaviour)",
+    "selective": "snap with c*=0.25 (eps=0.125), variant=reference, then score against the untouched reference at collar 0",
+    "no_collar": "collar 0.0",
+    "MS_FA_SC": "per-file component time / per-file scored reference speaker time",
+    "time_rounding": "RTTM start/duration rounded to 3 decimals as in the reference class"
+  },
+  "excluded_ids": {
+    "msdwild": [
+      "00017",
+      "00018"
+    ],
+    "voxconverse": []
+  },
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "pandas": "2.3.3",
+    "pyannote.core": "6.0.1",
+    "pyannote.metrics": "4.0.0"
+  },
+  "vendored": {
+    "selective_collar": "github.com/shahmananv13/selective_collar @ 94924f6da2f582cc759488313c15a51e62f48e56",
+    "DiarizationMetricInOne": "github.com/liutaocode/DiarizationMetricInOne @ 418ad7f6c387a6bbd4d28f6a210bd18354c645e7",
+    "dscore-ovl": "github.com/liutaocode/dscore-ovl @ de8fb127025c3da9e796bcdb2d18c68d63bd310a",
+    "CDER_Metric": "github.com/SpeechClub/CDER_Metric @ b509fd71e2f2df190cf738707663e9ca4e7618c3",
+    "BER": "github.com/X-LANCE/BER @ 8dbb7ca9d38778fc4dd57d8ae2e8f010b3d35739"
+  },
+  "coverage": [
+    {
+      "system": "nemotron",
+      "dataset": "msdwild",
+      "hyp_dir": "C:\\Users\\manan\\OneDrive\\Desktop\\selective_collar\\benchmark\\outputs\\rttm\\nemotron\\msdwild",
+      "status": "ok",
+      "n_reference_files": 488,
+      "counts": {
+        "ok": 488,
+        "excluded_by_protocol": 2
+      },
+      "per_file_csv": "..\\results\\alt_trad_hw0.125\\per_file\\nemotron_msdwild.csv",
+      "n_rows": 1464,
+      "n_rows_with_errors": 0
+    },
+    {
+      "system": "nemotron",
+      "dataset": "voxconverse",
+      "hyp_dir": "C:\\Users\\manan\\OneDrive\\Desktop\\selective_collar\\benchmark\\outputs\\rttm\\nemotron\\voxconverse",
+      "status": "ok",
+      "n_reference_files": 232,
+      "counts": {
+        "ok": 232
+      },
+      "per_file_csv": "..\\results\\alt_trad_hw0.125\\per_file\\nemotron_voxconverse.csv",
+      "n_rows": 696,
+      "n_rows_with_errors": 0
+    },
+    {
+      "system": "vbx",
+      "dataset": "msdwild",
+      "hyp_dir": "C:\\Users\\manan\\OneDrive\\Desktop\\selective_collar\\benchmark\\outputs\\rttm\\vbx\\msdwild",
+      "status": "ok",
+      "n_reference_files": 488,
+      "counts": {
+        "ok": 488,
+        "excluded_by_protocol": 2
+      },
+      "per_file_csv": "..\\results\\alt_trad_hw0.125\\per_file\\vbx_msdwild.csv",
+      "n_rows": 1464,
+      "n_rows_with_errors": 0
+    },
+    {
+      "system": "vbx",
+      "dataset": "voxconverse",
+      "hyp_dir": "C:\\Users\\manan\\OneDrive\\Desktop\\selective_collar\\benchmark\\outputs\\rttm\\vbx\\voxconverse",
+      "status": "ok",
+      "n_reference_files": 232,
+      "counts": {
+        "ok": 232
+      },
+      "per_file_csv": "..\\results\\alt_trad_hw0.125\\per_file\\vbx_voxconverse.csv",
+      "n_rows": 696,
+      "n_rows_with_errors": 0
+    }
+  ]
+}

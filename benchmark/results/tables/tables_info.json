@@ -1,0 +1,10 @@
+{
+  "file_set_used_for_latex": "common",
+  "trad_half_width_s": 0.25,
+  "common_set_sizes": {
+    "msdwild": 488,
+    "voxconverse": 157
+  },
+  "sd": "sample standard deviation (ddof=1) over files",
+  "published_rows": "Values copied from Table 5 of Vinod et al., IEEE Access 14 (2026), doi:10.1109/ACCESS.2026.3729661 (Pyannote 3.1; per-file mean +/- SD). Not recomputed by this harness."
+}

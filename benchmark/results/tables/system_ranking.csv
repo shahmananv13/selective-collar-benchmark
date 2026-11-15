@@ -1,0 +1,13 @@
+dataset,file_set,includes_published_pyannote,condition,ranking_best_to_worst,ranking_changes_between_conditions
+msdwild,common,False,no_collar,nemotron (0.178) < vbx (0.459),False
+msdwild,common,False,selective,nemotron (0.154) < vbx (0.452),False
+msdwild,common,False,traditional,nemotron (0.089) < vbx (0.379),False
+voxconverse,common,False,no_collar,nemotron (0.080) < vbx (0.228),False
+voxconverse,common,False,selective,nemotron (0.071) < vbx (0.224),False
+voxconverse,common,False,traditional,nemotron (0.051) < vbx (0.184),False
+msdwild,common,True,no_collar,nemotron (0.178) < pyannote_3.1 (published) (0.308) < vbx (0.459),False
+msdwild,common,True,selective,nemotron (0.154) < pyannote_3.1 (published) (0.294) < vbx (0.452),False
+msdwild,common,True,traditional,nemotron (0.089) < pyannote_3.1 (published) (0.247) < vbx (0.379),False
+voxconverse,common,True,no_collar,nemotron (0.080) < pyannote_3.1 (published) (0.123) < vbx (0.228),False
+voxconverse,common,True,selective,nemotron (0.071) < pyannote_3.1 (published) (0.117) < vbx (0.224),False
+voxconverse,common,True,traditional,nemotron (0.051) < pyannote_3.1 (published) (0.095) < vbx (0.184),False

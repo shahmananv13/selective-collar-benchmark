@@ -1,0 +1,16 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+# datasets and model weights are not redistributed
+Dataset/
+benchmark/vbx/VBx/models/**/nnet/*.onnx
+benchmark/vbx/VBx/models/**/nnet/*.pth
+# evaluation caches and LaTeX build products
+benchmark/results/**/cache/
+*.log
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+*.bak

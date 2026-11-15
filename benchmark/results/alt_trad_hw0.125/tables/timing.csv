@@ -1,0 +1,13 @@
+system,dataset,condition,n_files,time_core_ms_mean,time_total_ms_mean
+nemotron,msdwild,no_collar,488,9.844,560.6
+nemotron,msdwild,selective,488,12.81,564
+nemotron,msdwild,traditional,488,15.72,1087
+nemotron,voxconverse,no_collar,232,33.27,652.1
+nemotron,voxconverse,selective,232,39.86,667.9
+nemotron,voxconverse,traditional,232,54,1097
+vbx,msdwild,no_collar,488,8.271,582
+vbx,msdwild,selective,488,11.88,579.4
+vbx,msdwild,traditional,488,15.53,1133
+vbx,voxconverse,no_collar,232,66.87,714
+vbx,voxconverse,selective,232,86.18,781
+vbx,voxconverse,traditional,232,117.6,1174

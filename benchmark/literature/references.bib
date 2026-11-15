@@ -1,0 +1,425 @@
+% ======================================================================
+% references.bib  --  Selective Collar multi-model validation (ICAIIC 2027)
+% Compiled 2026-11-15.
+%
+% Verification legend (see the "note"-free comment above each entry):
+%   [V-full]  metadata checked against Crossref / ISCA archive / arXiv
+%             listing AND the paper body (PDF or HTML) was read today for
+%             the claims attributed to it in literature_review.md.
+%   [V-meta]  metadata checked against Crossref / ISCA / arXiv today;
+%             cited only for existence / architecture description.
+%   [V-card]  web page (model card) fetched today; no archival paper.
+%   [REUSED]  taken from the reference list of the published IEEE Access
+%             paper (Vinod et al. 2026); not re-fetched today.
+% Nothing in this file is UNVERIFIED; unverified items are listed only in
+% literature_review.md, Section 7.
+% ======================================================================
+
+% ---------------------------------------------------------------- base paper
+% [REUSED] bibliographic data as supplied with the task (full text read).
+@article{vinod2026selective,
+  author  = {Vinod, Shah Manan and Paul, Prajat and Bukhari, Shah and Chowdhury, Jobayer and Ahmed, Ashir},
+  title   = {Beyond Uniform Forgiveness: Introducing the Selective Collar to Mitigate Evaluation Bias in Speaker Diarization},
+  journal = {IEEE Access},
+  volume  = {14},
+  pages   = {136563--136580},
+  year    = {2026},
+  doi     = {10.1109/ACCESS.2026.3729661}
+}
+
+% ---------------------------------------------------------------- systems
+% [V-full] Crossref + arXiv:2012.14952 PDF read (Sec. 3.2, 3.4, 5.1, Table 2).
+@article{landini2022vbx,
+  author  = {Landini, Federico and Profant, J{\'a}n and Diez, Mireia and Burget, Luk{\'a}{\v{s}}},
+  title   = {Bayesian {HMM} Clustering of x-Vector Sequences ({VBx}) in Speaker Diarization: Theory, Implementation and Analysis on Standard Tasks},
+  journal = {Computer Speech \& Language},
+  volume  = {71},
+  pages   = {101254},
+  year    = {2022},
+  doi     = {10.1016/j.csl.2021.101254}
+}
+
+% [V-full] Crossref + arXiv:2010.11718 PDF read (Sec. 2, Tables 1, 2, 6).
+@inproceedings{landini2021but,
+  author    = {Landini, Federico and Glembek, Ond{\v{r}}ej and Mat{\v{e}}jka, Pavel and Rohdin, Johan and Burget, Luk{\'a}{\v{s}} and Diez, Mireia and Silnova, Anna},
+  title     = {Analysis of the {BUT} Diarization System for {VoxConverse} Challenge},
+  booktitle = {Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)},
+  year      = {2021},
+  pages     = {5819--5823},
+  doi       = {10.1109/ICASSP39728.2021.9414315}
+}
+
+% [V-full] arXiv listing (journal-ref: Proc. 42nd ICML, 2025) + v3 HTML read (Table 1).
+% Title is the v3 / ICML title; v1-v2 were titled "Sortformer: Seamless Integration
+% of Speaker Diarization and ASR by Bridging Timestamps and Tokens".
+@inproceedings{park2025sortformer,
+  author    = {Park, Taejin and Medennikov, Ivan and Dhawan, Kunal and Wang, Weiqing and Huang, He and Koluguri, Nithin Rao and Puvvada, Krishna C. and Balam, Jagadeesh and Ginsburg, Boris},
+  title     = {Sortformer: A Novel Approach for Permutation-Resolved Speaker Supervision in Speech-to-Text Systems},
+  booktitle = {Proc. 42nd Int. Conf. Mach. Learn. (ICML)},
+  year      = {2025},
+  eprint    = {2409.06656},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2409.06656}
+}
+
+% [V-full] Crossref + arXiv:2507.18446 HTML read (Table 1 and caption).
+@inproceedings{medennikov2025streaming,
+  author    = {Medennikov, Ivan and Park, Taejin and Wang, Weiqing and Huang, He and Dhawan, Kunal and Wang, Jinhan and Balam, Jagadeesh and Ginsburg, Boris},
+  title     = {Streaming {Sortformer}: Speaker Cache-Based Online Speaker Diarization with Arrival-Time Ordering},
+  booktitle = {Proc. Interspeech},
+  year      = {2025},
+  pages     = {5238--5242},
+  doi       = {10.21437/Interspeech.2025-2244}
+}
+
+% [V-full] arXiv listing + PDF read. Preprint only ("Submitted to ICASSP 2027"),
+% not peer reviewed as of 2026-11-15.
+@misc{medennikov2026nemotron,
+  author = {Medennikov, Ivan and Park, Taejin and Timofeeva, Tatiana and Huang, He and Polok, Alexander and Kostandian, Sofia and Wang, Weiqing and Gao, Dongji and Balam, Jagadeesh and Ginsburg, Boris},
+  title  = {Nemotron 3 Diarization: Advancing the Accuracy-Efficiency Frontier in Streaming Speaker Diarization},
+  year   = {2026},
+  eprint = {2611.12246},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.AS},
+  url    = {https://arxiv.org/abs/2611.12246}
+}
+
+% [V-card] Model card fetched 2026-11-15 (release date on card: 2026-09-23).
+@misc{nvidia2026nemotroncard,
+  author       = {{NVIDIA}},
+  title        = {Nemotron-3-Diarization (Model Card)},
+  year         = {2026},
+  howpublished = {Hugging Face},
+  url          = {https://huggingface.co/nvidia/Nemotron-3-Diarization},
+  note         = {Accessed: Nov. 15, 2026}
+}
+
+% [V-full] Crossref + ISCA PDF read (Table 1 and caption).
+@inproceedings{plaquet2023powerset,
+  author    = {Plaquet, Alexis and Bredin, Herv{\'e}},
+  title     = {Powerset Multi-Class Cross Entropy Loss for Neural Speaker Diarization},
+  booktitle = {Proc. Interspeech},
+  year      = {2023},
+  pages     = {3222--3226},
+  doi       = {10.21437/Interspeech.2023-205}
+}
+
+% [V-full] Crossref + ISCA PDF read (Sec. 2-3, Table 1).
+@inproceedings{bredin2023pyannote,
+  author    = {Bredin, Herv{\'e}},
+  title     = {pyannote.audio 2.1 Speaker Diarization Pipeline: Principle, Benchmark, and Recipe},
+  booktitle = {Proc. Interspeech},
+  year      = {2023},
+  pages     = {1983--1987},
+  doi       = {10.21437/Interspeech.2023-105}
+}
+
+% [V-card] Model card fetched 2026-11-15 (benchmark table).
+@misc{pyannote2023card31,
+  author       = {{pyannote}},
+  title        = {pyannote/speaker-diarization-3.1 (Model Card)},
+  year         = {2023},
+  howpublished = {Hugging Face},
+  url          = {https://huggingface.co/pyannote/speaker-diarization-3.1},
+  note         = {Accessed: Nov. 15, 2026}
+}
+
+% ---------------------------------------------------------------- benchmarks
+% [V-full] arXiv listing + PDF read (Sec. 2.2, 3.1). Listed by icml.cc as a poster at
+% the "Learning to Listen: ICML 2026 Workshop on Machine Learning for Audio".
+@misc{lanzendorfer2025benchmarking,
+  author = {Lanzend{\"o}rfer, Luca A. and Gr{\"o}tschla, Florian and Blaser, Cesare and Wattenhofer, Roger},
+  title  = {Benchmarking Diarization Models},
+  year   = {2025},
+  eprint = {2509.26177},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SD},
+  url    = {https://arxiv.org/abs/2509.26177}
+}
+
+% [V-full] arXiv listing + v2 PDF/HTML read (Sec. 2.1, 2.2, 2.4).
+@misc{pacheco2025sdbench,
+  author = {Pacheco, Eduardo and Orhon, Atila and Durmus, Berkin and Munyampirwa, Blaise and Leonov, Andrey},
+  title  = {{SDBench}: A Comprehensive Benchmark Suite for Speaker Diarization},
+  year   = {2025},
+  eprint = {2507.16136},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SD},
+  url    = {https://arxiv.org/abs/2507.16136}
+}
+
+% [V-full] Crossref + arXiv:2510.19572 HTML read (Table 2, Sec. 4).
+@inproceedings{palka2026vbx,
+  author    = {P{\'a}lka, Petr and Han, Jiangyu and Delcroix, Marc and Tawara, Naohiro and Burget, Luk{\'a}{\v{s}}},
+  title     = {{VBx} for End-to-End Neural and Clustering-Based Diarization},
+  booktitle = {Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)},
+  year      = {2026},
+  pages     = {17472--17476},
+  doi       = {10.1109/ICASSP55912.2026.11462054}
+}
+
+% [V-full] Crossref + arXiv:2409.09408 PDF read (Tables II-IV).
+@inproceedings{han2025diarizen,
+  author    = {Han, Jiangyu and Landini, Federico and Rohdin, Johan and Silnova, Anna and Diez, Mireia and Burget, Luk{\'a}{\v{s}}},
+  title     = {Leveraging Self-Supervised Learning for Speaker Diarization},
+  booktitle = {Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)},
+  year      = {2025},
+  pages     = {1--5},
+  doi       = {10.1109/ICASSP49660.2025.10889475}
+}
+
+% [V-full] Crossref + arXiv:2312.04324 PDF/HTML read (Sec. IV-B, Tables II, XIII).
+@article{landini2024diaper,
+  author  = {Landini, Federico and Diez, Mireia and Stafylakis, Themos and Burget, Luk{\'a}{\v{s}}},
+  title   = {{DiaPer}: End-to-End Neural Diarization with Perceiver-Based Attractors},
+  journal = {IEEE/ACM Trans. Audio, Speech, Lang. Process.},
+  volume  = {32},
+  pages   = {3450--3465},
+  year    = {2024},
+  doi     = {10.1109/TASLP.2024.3422818}
+}
+
+% [V-full] Crossref + arXiv:2305.18074 (abstract and evaluation-setup passage read).
+@article{serafini2023experimental,
+  author  = {Serafini, Luca and Cornell, Samuele and Morrone, Giovanni and Zovato, Enrico and Brutti, Alessio and Squartini, Stefano},
+  title   = {An Experimental Review of Speaker Diarization Methods with Application to Two-Speaker Conversational Telephone Speech Recordings},
+  journal = {Computer Speech \& Language},
+  volume  = {82},
+  pages   = {101534},
+  year    = {2023},
+  doi     = {10.1016/j.csl.2023.101534}
+}
+
+% [V-full] Crossref + ACL Anthology PDF read (abstract, Sec. 1).
+@inproceedings{fischbach2024comparative,
+  author    = {Fischbach, Lea},
+  title     = {A Comparative Analysis of Speaker Diarization Models: Creating a Dataset for {German} Dialectal Speech},
+  booktitle = {Proc. 3rd Workshop NLP Appl. Field Linguistics (Field Matters)},
+  year      = {2024},
+  pages     = {43--51},
+  doi       = {10.18653/v1/2024.fieldmatters-1.6}
+}
+
+% ---------------------------------------------------------------- datasets and protocols
+% [V-full] Crossref + arXiv:2007.01216 PDF read (Sec. 1, 3, 5; Table 2).
+@inproceedings{chung2020voxconverse,
+  author    = {Chung, Joon Son and Huh, Jaesung and Nagrani, Arsha and Afouras, Triantafyllos and Zisserman, Andrew},
+  title     = {Spot the Conversation: Speaker Diarisation in the Wild},
+  booktitle = {Proc. Interspeech},
+  year      = {2020},
+  pages     = {299--303},
+  doi       = {10.21437/Interspeech.2020-2337}
+}
+
+% [V-full] Crossref + arXiv:2408.14886 PDF read (diarisation metric paragraph).
+@article{huh2024voxsrc,
+  author  = {Huh, Jaesung and Chung, Joon Son and Nagrani, Arsha and Brown, Andrew and Jung, Jee-weon and Garcia-Romero, Daniel and Zisserman, Andrew},
+  title   = {The {VoxCeleb} Speaker Recognition Challenge: A Retrospective},
+  journal = {IEEE/ACM Trans. Audio, Speech, Lang. Process.},
+  volume  = {32},
+  pages   = {3850--3866},
+  year    = {2024},
+  doi     = {10.1109/TASLP.2024.3444456}
+}
+
+% [V-full] ISCA archive page + PDF read (Sec. 4-5, Tables 2-4).
+@inproceedings{liu2022msdwild,
+  author    = {Liu, Tao and Fan, Shuai and Xiang, Xu and Song, Hongbo and Lin, Shaoxiong and Sun, Jiaqi and Han, Tianyuan and Chen, Siyuan and Yao, Binwei and Liu, Sen and Wu, Yifei and Qian, Yanmin and Yu, Kai},
+  title     = {{MSDWild}: Multi-Modal Speaker Diarization Dataset in the Wild},
+  booktitle = {Proc. Interspeech},
+  year      = {2022},
+  pages     = {1476--1480},
+  doi       = {10.21437/Interspeech.2022-10466}
+}
+
+% [V-full] Crossref + arXiv:1906.07839 PDF read (Sec. 1, 3).
+@inproceedings{ryant2019dihard2,
+  author    = {Ryant, Neville and Church, Kenneth and Cieri, Christopher and Cristia, Alejandrina and Du, Jun and Ganapathy, Sriram and Liberman, Mark},
+  title     = {The Second {DIHARD} Diarization Challenge: Dataset, Task, and Baselines},
+  booktitle = {Proc. Interspeech},
+  year      = {2019},
+  pages     = {978--982},
+  doi       = {10.21437/Interspeech.2019-1268}
+}
+
+% [V-full] Crossref + arXiv:2012.01477 PDF read (Sec. 3).
+@inproceedings{ryant2021dihard3,
+  author    = {Ryant, Neville and Singh, Prachi and Krishnamohan, Venkat and Varma, Rajat and Church, Kenneth and Cieri, Christopher and Du, Jun and Ganapathy, Sriram and Liberman, Mark},
+  title     = {The Third {DIHARD} Diarization Challenge},
+  booktitle = {Proc. Interspeech},
+  year      = {2021},
+  pages     = {3570--3574},
+  doi       = {10.21437/Interspeech.2021-1208}
+}
+
+% [V-full] arXiv:2006.05815v3 PDF read (Sec. 4.1-4.2). Technical report.
+@misc{ryant2020dihard3plan,
+  author = {Ryant, Neville and Church, Kenneth and Cieri, Christopher and Du, Jun and Ganapathy, Sriram and Liberman, Mark},
+  title  = {Third {DIHARD} Challenge Evaluation Plan},
+  year   = {2020},
+  eprint = {2006.05815},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.AS},
+  url    = {https://arxiv.org/abs/2006.05815}
+}
+
+% ---------------------------------------------------------------- evaluation critiques / metrics
+% [V-full] EURASIP proceedings PDF read (abstract, Sec. I); DOI as printed in the
+% IEEE Access reference list (start page 381 seen on the PDF footer; end page as
+% printed in the IEEE Access reference list).
+@inproceedings{mcknight2020phonetic,
+  author    = {McKnight, Simon W. and Hogg, Aidan O. T. and Naylor, Patrick A.},
+  title     = {Analysis of Phonetic Dependence of Segmentation Errors in Speaker Diarization},
+  booktitle = {Proc. 28th Eur. Signal Process. Conf. (EUSIPCO)},
+  year      = {2020},
+  pages     = {381--385},
+  doi       = {10.23919/Eusipco47968.2020.9287552}
+}
+
+% [V-full] Crossref + author-hosted PDF read (abstract, Sec. II, Figs. 1-2, Table II).
+@inproceedings{mcknight2022human,
+  author    = {McKnight, Simon W. and Hogg, Aidan O. T. and Neo, Vincent W. and Naylor, Patrick A.},
+  title     = {Studying Human-Based Speaker Diarization and Comparing to State-of-the-Art Systems},
+  booktitle = {Proc. Asia-Pacific Signal Inf. Process. Assoc. Annu. Summit Conf. (APSIPA ASC)},
+  year      = {2022},
+  pages     = {1--8},
+  doi       = {10.23919/APSIPAASC55919.2022.9979811}
+}
+
+% [V-full] Crossref + arXiv:2507.09226v2 PDF read (abstract, Sec. on collar, Fig. 4).
+@inproceedings{horiguchi2025repurpose,
+  author    = {Horiguchi, Shota and Tawara, Naohiro and Ashihara, Takanori and Ando, Atsushi and Delcroix, Marc},
+  title     = {Can We Really Repurpose Multi-Speaker {ASR} Corpus for Speaker Diarization?},
+  booktitle = {Proc. IEEE Autom. Speech Recognit. Understand. Workshop (ASRU)},
+  year      = {2025},
+  pages     = {1--8},
+  doi       = {10.1109/ASRU65441.2025.11434778}
+}
+
+% [V-full] arXiv:2609.11007v2 PDF read (abstract, Sec. 1-2, discussion). Preprint;
+% no venue stated on the PDF.
+@misc{horiguchi2026decomposition,
+  author = {Horiguchi, Shota and Delcroix, Marc and Tawara, Naohiro and Plaquet, Alexis},
+  title  = {Diarization Error Decomposition Under Pause Annotation Ambiguity},
+  year   = {2026},
+  eprint = {2609.11007},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.AS},
+  url    = {https://arxiv.org/abs/2609.11007}
+}
+
+% [V-meta] arXiv:2208.08042 PDF header checked today; venue/DOI as printed in the
+% IEEE Access reference list.
+@inproceedings{cheng2022cssd,
+  author    = {Cheng, Gaofeng and Chen, Yifan and Yang, Runyan and Li, Qingxuan and Yang, Zehui and Ye, Lingxuan and Zhang, Pengyuan and Zhang, Qingqing and Xie, Lei and Qian, Yanmin and Lee, Kong Aik and Yan, Yonghong},
+  title     = {The Conversational Short-Phrase Speaker Diarization ({CSSD}) Task: Dataset, Evaluation Metric and Baselines},
+  booktitle = {Proc. 13th Int. Symp. Chin. Spoken Lang. Process. (ISCSLP)},
+  year      = {2022},
+  pages     = {488--492},
+  doi       = {10.1109/ISCSLP57327.2022.10038258}
+}
+
+% [V-meta] arXiv:2211.04304 PDF header checked today.
+@misc{liu2022ber,
+  author = {Liu, Tao and Yu, Kai},
+  title  = {{BER}: Balanced Error Rate for Speaker Diarization},
+  year   = {2022},
+  eprint = {2211.04304},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SD},
+  url    = {https://arxiv.org/abs/2211.04304}
+}
+
+% [V-full] Crossref + arXiv:2205.07086 PDF read (abstract, Sec. 1).
+@inproceedings{kalda2022collar,
+  author    = {Kalda, Joonas and Alum{\"a}e, Tanel},
+  title     = {Collar-Aware Training for Streaming Speaker Change Detection in Broadcast Speech},
+  booktitle = {Proc. Speaker and Language Recognition Workshop (Odyssey)},
+  year      = {2022},
+  pages     = {141--147},
+  doi       = {10.21437/Odyssey.2022-20}
+}
+
+% ---------------------------------------------------------------- architectural families
+% [V-meta] Crossref (also printed in the IEEE Access reference list).
+@inproceedings{fujita2019eend,
+  author    = {Fujita, Yusuke and Kanda, Naoyuki and Horiguchi, Shota and Nagamatsu, Kenji and Watanabe, Shinji},
+  title     = {End-to-End Neural Speaker Diarization with Permutation-Free Objectives},
+  booktitle = {Proc. Interspeech},
+  year      = {2019},
+  pages     = {4300--4304},
+  doi       = {10.21437/Interspeech.2019-2899}
+}
+
+% [V-full] Crossref + arXiv:2106.10654 PDF read (feature/subsampling and evaluation paragraphs).
+@article{horiguchi2022eda,
+  author  = {Horiguchi, Shota and Fujita, Yusuke and Watanabe, Shinji and Xue, Yawen and Garcia, Paola},
+  title   = {Encoder-Decoder Based Attractors for End-to-End Neural Diarization},
+  journal = {IEEE/ACM Trans. Audio, Speech, Lang. Process.},
+  volume  = {30},
+  pages   = {1493--1507},
+  year    = {2022},
+  doi     = {10.1109/TASLP.2022.3162080}
+}
+
+% [V-meta] Crossref + arXiv:2010.13366 PDF header.
+@inproceedings{kinoshita2021eendvc,
+  author    = {Kinoshita, Keisuke and Delcroix, Marc and Tawara, Naohiro},
+  title     = {Integrating End-to-End Neural and Clustering-Based Diarization: Getting the Best of Both Worlds},
+  booktitle = {Proc. IEEE Int. Conf. Acoust., Speech Signal Process. (ICASSP)},
+  year      = {2021},
+  pages     = {7198--7202},
+  doi       = {10.1109/ICASSP39728.2021.9414333}
+}
+
+% [V-full] Crossref + arXiv:2005.07272 PDF read (task/metric paragraph).
+@inproceedings{medennikov2020tsvad,
+  author    = {Medennikov, Ivan and Korenevsky, Maxim and Prisyach, Tatiana and Khokhlov, Yuri and Korenevskaya, Mariya and Sorokin, Ivan and Timofeeva, Tatiana and Mitrofanov, Anton and Andrusenko, Andrei and Podluzhny, Ivan and Laptev, Aleksandr and Romanenko, Aleksei},
+  title     = {Target-Speaker Voice Activity Detection: A Novel Approach for Multi-Speaker Diarization in a Dinner Party Scenario},
+  booktitle = {Proc. Interspeech},
+  year      = {2020},
+  pages     = {274--278},
+  doi       = {10.21437/Interspeech.2020-1602}
+}
+
+% [V-full] Crossref + arXiv:2203.15974 PDF read (Sec. 4.2).
+@inproceedings{park2022msdd,
+  author    = {Park, Tae Jin and Koluguri, Nithin Rao and Balam, Jagadeesh and Ginsburg, Boris},
+  title     = {Multi-Scale Speaker Diarization with Dynamic Scale Weighting},
+  booktitle = {Proc. Interspeech},
+  year      = {2022},
+  pages     = {5080--5084},
+  doi       = {10.21437/Interspeech.2022-991}
+}
+
+% [V-full] Crossref + arXiv:2303.00747 PDF read (Sec. 3.2: 200 ms collar is for WORD timestamps).
+@inproceedings{bain2023whisperx,
+  author    = {Bain, Max and Huh, Jaesung and Han, Tengda and Zisserman, Andrew},
+  title     = {{WhisperX}: Time-Accurate Speech Transcription of Long-Form Audio},
+  booktitle = {Proc. Interspeech},
+  year      = {2023},
+  pages     = {4489--4493},
+  doi       = {10.21437/Interspeech.2023-78}
+}
+
+% ---------------------------------------------------------------- REUSED, not re-fetched today
+% [REUSED] From the IEEE Access reference list ([14]); DOI as printed there.
+@inproceedings{bredin2017pyannotemetrics,
+  author    = {Bredin, Herv{\'e}},
+  title     = {pyannote.metrics: A Toolkit for Reproducible Evaluation, Diagnostic, and Error Analysis of Speaker Diarization Systems},
+  booktitle = {Proc. Interspeech},
+  year      = {2017},
+  pages     = {3587--3591},
+  doi       = {10.21437/Interspeech.2017-411}
+}
+
+% [REUSED] From the IEEE Access reference list ([21]); DOI as printed there.
+@article{park2022review,
+  author  = {Park, Tae Jin and Kanda, Naoyuki and Dimitriadis, Dimitrios and Han, Kyu J. and Watanabe, Shinji and Narayanan, Shrikanth},
+  title   = {A Review of Speaker Diarization: Recent Advances with Deep Learning},
+  journal = {Computer Speech \& Language},
+  volume  = {72},
+  pages   = {101317},
+  year    = {2022},
+  doi     = {10.1016/j.csl.2021.101317}
+}

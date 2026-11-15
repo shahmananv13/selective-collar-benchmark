@@ -1,0 +1,32 @@
+[project]
+name = "selcollar-nemotron"
+version = "0.1.0"
+description = "Nemotron-3-Diarization (Streaming Sortformer via NeMo) RTTM runner for the selective-collar benchmark."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # RTX 50xx / Blackwell needs CUDA 12.8+ wheels -> cu128 index below
+    "torch>=2.7",
+    "torchaudio>=2.7",
+    # NeMo 3.1.0.dev (git main @1688cc3d6); PyPI 3.0.0 cannot load Nemotron-3-Diarization.
+    "nemo_toolkit[asr]",
+    "Cython",
+    "packaging",
+    "cuda-bindings>=12.8,<13",   # 13.x cydriver.pyd is blocked by Windows Smart App Control
+    "scikit-learn>=1.5,<1.9",    # 1.9.x _cython_blas.pyd is blocked by Windows Smart App Control
+    "soundfile>=0.12",
+    "soxr",
+    "numpy",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128" }]
+torchaudio = [{ index = "pytorch-cu128" }]
+nemo-toolkit = { path = "vendor/wheels/nemo_toolkit-3.1.0+1688cc3d6-py3-none-any.whl" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
